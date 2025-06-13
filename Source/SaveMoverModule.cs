@@ -102,9 +102,9 @@ public class SaveMoverModule : EverestModule {
 
                 MoveSaveFiles(menuData.StartSlot, self.SlotIndex, [
                     // normal save files
-                    new("./Saves", ["{0}-*.celeste", "{0}.celeste"]),
+                    new(UserIO.SavePath, ["{0}-*.celeste", "{0}.celeste"]),
                     // izumi files
-                    new("./Saves/izumisQOL/journalStats", ["{0}_*.txt"]),
+                    new($"{UserIO.SavePath}/izumisQOL/journalStats", ["{0}_*.txt"]),
                 ]);
             } else if (self.SlotIndex < self.Slots.Length - 1) {
                 Audio.Play("event:/ui/main/button_toggle_on");
