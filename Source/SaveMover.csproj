@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <AssemblyName>SaveMover</AssemblyName>
         <RootNamespace>Celeste.Mod.SaveMover</RootNamespace>
         <LangVersion>latest</LangVersion>
