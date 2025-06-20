@@ -172,6 +172,9 @@ public class SaveMoverModule : EverestModule {
 
         // Glob all files
         var dir = new DirectoryInfo(searchDirectory);
+        if (!dir.Exists) {
+            return;
+        }
 
         List<FileInfo> GetMatchingFilesAtIndex(int index) {
             List<FileInfo> sourceFiles = [];
